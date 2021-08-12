@@ -1,11 +1,11 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: ddc-argocd-demo-route
+  name: python-flask-app-route
 spec:
   path: /
   to:
     kind: Service
-    name: ddc-argocd-demo-service
+    name: python-flask-app-service
   port:
     targetPort: 8080
