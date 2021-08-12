@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: nginx-route
+  namespace: default
+spec:
+  path: /
+  to:
+    kind: Service
+    name: nginx-service
+  port:
+    targetPort: 80
