@@ -14,9 +14,9 @@ echo "[2/3]: Patching deploy.yaml file"
 
 kubectl patch --local -f ../scripts/deploy.yaml -p \
 '{"spec":{"template":{"spec":{"containers":[{"name":"ddc-argocd-demo","image":"'$DOCKERIMG:$DOCKERTAG'"}]}}}}' \
--o yaml &> ../scripts/deployment.yaml && mv deployment.yaml deploy.yaml
+-o yaml &> ../scripts/deployment.yaml && mv ../scripts/deployment.yaml ../scripts/deploy.yaml
 
 echo "[3/3]: Pushing to GitHub"
 
-git add . && git commit -m "Deployment of image $DOCKERIMG:$DOCKERTAG" && git push
+cd ../ && git add . && git commit -m "Deployment of image $DOCKERIMG:$DOCKERTAG" && git push
 

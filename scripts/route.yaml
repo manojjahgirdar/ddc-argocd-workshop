@@ -1,12 +1,11 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: nginx-route
-  namespace: default
+  name: otp-apis-url
 spec:
   path: /
   to:
     kind: Service
-    name: nginx-service
+    name: otp-apis-service
   port:
-    targetPort: 80
+    targetPort: 8080
