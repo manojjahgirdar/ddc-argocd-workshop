@@ -1,11 +1,11 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: otp-apis-url
+  name: ddc-argocd-demo-route
 spec:
   path: /
   to:
     kind: Service
-    name: otp-apis-service
+    name: ddc-argocd-demo-service
   port:
     targetPort: 8080

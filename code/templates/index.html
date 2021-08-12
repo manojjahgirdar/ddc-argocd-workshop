@@ -1,3 +1,11 @@
+<!--
+  Copyright IBM Corp. 2021
+
+  This source code is licensed under the Apache-2.0 license found in the
+  LICENSE file in the root directory of this source tree.
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,8 +56,42 @@
         </nav>
     </header>
 
-    <div class="custom-spacing">
-        {% block extendblock %} {% endblock %}
+<div class="custom-spacing">
+        <!-- Table -->
+  <table class="bx--data-table  bx--data-table--compact  " >
+    <thead>
+      <tr>
+          <th>
+                  <span class="bx--table-header-label">Machine</span>
+            </th>
+          <th>
+                  <span class="bx--table-header-label">Platform</span>
+            </th>
+          <th>
+                  <span class="bx--table-header-label">Processor</span>
+            </th>
+          <th>
+                  <span class="bx--table-header-label">Python Version</span>
+            </th>
+          <th>
+                  <span class="bx--table-header-label">System</span>
+            </th>
+          <th>
+                  <span class="bx--table-header-label">Version</span>
+            </th>
+      </tr>
+    </thead>
+  <tbody>
+    <tr>
+        <td>{{details.machine}}</td>
+        <td>{{details.platform}}</td>
+        <td>{{details.processor}}</td>
+        <td>{{details.python_version}}</td>
+        <td>{{details.system}}</td>
+        <td>{{details.version}}</td>
+    </tr>
+    </tbody>
+  </table>
     </div>
 </body>
 
