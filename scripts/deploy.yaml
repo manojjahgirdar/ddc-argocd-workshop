@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: flask
-  name: ddc-argocd-demo
+  name: python-flask-app-deployment
 spec:
   selector:
     matchLabels:
