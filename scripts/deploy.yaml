@@ -14,5 +14,5 @@ spec:
         app: flask
     spec:
       containers:
-      - image: manojjahgirdar/ddc-argocd-demo:v10
+      - image: manojjahgirdar/ddc-argocd-demo:v11
         name: ddc-argocd-demo
