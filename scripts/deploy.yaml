@@ -5,7 +5,7 @@ metadata:
     app: flask
   name: python-flask-app-deployment
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: flask
@@ -15,5 +15,5 @@ spec:
         app: flask
     spec:
       containers:
-      - image: manojjahgirdar/ddc-argocd-demo:v16
+      - image: manojjahgirdar/ddc-argocd-demo:v17
         name: ddc-argocd-demo
