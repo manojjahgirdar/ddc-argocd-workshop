@@ -4,6 +4,13 @@
     margin-right: 2%;
 }
 
+.responsive {
+    margin-left: 50%;
+    max-width: 80%;
+    height: auto;
+    transform: translateX(-50%);
+  }
+
 .cr {
     width: 50%;
     margin: 0 auto;
