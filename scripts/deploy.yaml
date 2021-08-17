@@ -5,7 +5,7 @@ metadata:
     app: flask
   name: python-flask-app-deployment
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: flask
