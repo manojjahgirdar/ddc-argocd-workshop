@@ -5,7 +5,7 @@ import logging as logger
 import os
 
 application = Flask(__name__)
-application.config['SECRET_KEY'] = 'supersecretkey'
+application.config['SECRET_KEY'] = 'supersecretkey123'
 
 storeTitle = "The Medical Store"
 offerDetails = [
