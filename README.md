@@ -17,3 +17,6 @@ Argo CD is implemented as a Kubernetes controller which continuously monitors ru
 
 **Figure 2:** Automatic/Manual state Sync
 
+## Screenshot
+
+![Medicalstore](doc/source/images/medicalstore.png)
