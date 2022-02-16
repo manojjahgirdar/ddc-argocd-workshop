@@ -48,9 +48,9 @@ def index():
 #     }
 # ]
 
-# @application.route('/store')
-# def store():
-#     return render_template('store.html', storeTitle=storeTitle, products=products)
+@application.route('/store')
+def store():
+    return render_template('store.html', storeTitle=storeTitle, products=products)
 
 
 port = os.getenv('VCAP_APP_PORT', '8080')
